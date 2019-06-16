@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwebsocket-client-mbedtls-lib.a  CMakeFiles/websocket-client-mbedtls-lib.dir/src/WSListener.cpp.o
+/usr/bin/ranlib libwebsocket-client-mbedtls-lib.a

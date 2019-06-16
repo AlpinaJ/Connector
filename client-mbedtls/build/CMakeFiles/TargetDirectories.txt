@@ -1,0 +1,5 @@
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/rebuild_cache.dir
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/edit_cache.dir
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-lib.dir
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-test.dir
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir
