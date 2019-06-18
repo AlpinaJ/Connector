@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <chrono>
 #include <ctime>
+#include <sys/stat.h>
 
 using namespace std;
 
@@ -39,6 +40,8 @@ void run(const std::vector<std::pair<std::string, int>> &v)
     std::vector<std::thread> threads;
     std::vector<std::shared_ptr<oatpp::websocket::WebSocket>> socket(v.size());
     vector<ofstream> files(v.size());
+
+    const int dir_err = mkdir("outputs", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
 
     for (int i = 0; i < v.size(); i++)
     {
