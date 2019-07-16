@@ -9,7 +9,7 @@
 /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/WSListener.cpp
 WSListener.hpp
 /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/WSListener.hpp
-iostream
+string.h
 -
 algorithm
 -
@@ -17,6 +17,16 @@ chrono
 -
 ctime
 -
+iomanip
+-
+iostream
+-
+sstream
+-
+vector
+-
+rapidjson/document.h
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/rapidjson/document.h
 
 /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/WSListener.hpp
 fstream

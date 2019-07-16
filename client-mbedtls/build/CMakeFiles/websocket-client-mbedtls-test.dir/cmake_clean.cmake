@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/websocket-client-mbedtls-test.dir/test/tests.cpp.o"
   "CMakeFiles/websocket-client-mbedtls-test.dir/test/WSTest.cpp.o"
-  "websocket-client-mbedtls-test.pdb"
+  "CMakeFiles/websocket-client-mbedtls-test.dir/test/tests.cpp.o"
   "websocket-client-mbedtls-test"
+  "websocket-client-mbedtls-test.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

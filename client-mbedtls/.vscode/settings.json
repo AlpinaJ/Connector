@@ -46,6 +46,11 @@
         "typeinfo": "cpp",
         "utility": "cpp",
         "deque": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "complex": "cpp",
+        "functional": "cpp",
+        "iomanip": "cpp",
+        "typeindex": "cpp"
     }
 }

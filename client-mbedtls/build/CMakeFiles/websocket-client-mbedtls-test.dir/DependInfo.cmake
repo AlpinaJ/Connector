@@ -14,7 +14,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src"
   "/usr/local/include/oatpp-0.19.4/oatpp"
   "/usr/local/include/oatpp-0.19.4/oatpp-websocket"
-  "/usr/local/include"
   "/usr/local/include/oatpp-0.19.4/oatpp-mbedtls"
   )
 
