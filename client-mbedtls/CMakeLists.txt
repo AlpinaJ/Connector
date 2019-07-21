@@ -39,7 +39,12 @@ link_directories(
 
 add_executable(${project_name}-exe
         src/App.cpp
+        src/Trade.cpp
+        src/Binance.cpp
+        src/Gate.cpp
+        src/Hitbtc.cpp
 )
+
 target_link_libraries(${project_name}-exe ${project_name}-lib)
 add_dependencies(${project_name}-exe ${project_name}-lib)
 

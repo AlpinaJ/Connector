@@ -70,14 +70,74 @@ CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/App.cpp -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.s
 
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.o: CMakeFiles/websocket-client-mbedtls-exe.dir/flags.make
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.o: ../src/Trade.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.o -c /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Trade.cpp
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Trade.cpp > CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.i
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Trade.cpp -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.s
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o: CMakeFiles/websocket-client-mbedtls-exe.dir/flags.make
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o: ../src/Binance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o -c /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Binance.cpp
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Binance.cpp > CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.i
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Binance.cpp -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.s
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o: CMakeFiles/websocket-client-mbedtls-exe.dir/flags.make
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o: ../src/Gate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o -c /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Gate.cpp
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Gate.cpp > CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.i
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Gate.cpp -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.s
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o: CMakeFiles/websocket-client-mbedtls-exe.dir/flags.make
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o: ../src/Hitbtc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o -c /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Hitbtc.cpp
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Hitbtc.cpp > CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.i
+
+CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Hitbtc.cpp -o CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.s
+
 # Object files for target websocket-client-mbedtls-exe
 websocket__client__mbedtls__exe_OBJECTS = \
-"CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.o"
+"CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.o" \
+"CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.o" \
+"CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o" \
+"CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o" \
+"CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o"
 
 # External object files for target websocket-client-mbedtls-exe
 websocket__client__mbedtls__exe_EXTERNAL_OBJECTS =
 
 websocket-client-mbedtls-exe: CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.o
+websocket-client-mbedtls-exe: CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.o
+websocket-client-mbedtls-exe: CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o
+websocket-client-mbedtls-exe: CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o
+websocket-client-mbedtls-exe: CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o
 websocket-client-mbedtls-exe: CMakeFiles/websocket-client-mbedtls-exe.dir/build.make
 websocket-client-mbedtls-exe: libwebsocket-client-mbedtls-lib.a
 websocket-client-mbedtls-exe: /usr/local/lib/oatpp-0.19.4/liboatpp-websocket.a
@@ -88,7 +148,7 @@ websocket-client-mbedtls-exe: /usr/local/lib/libmbedtls.a
 websocket-client-mbedtls-exe: /usr/local/lib/libmbedx509.a
 websocket-client-mbedtls-exe: /usr/local/lib/libmbedcrypto.a
 websocket-client-mbedtls-exe: CMakeFiles/websocket-client-mbedtls-exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable websocket-client-mbedtls-exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable websocket-client-mbedtls-exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/websocket-client-mbedtls-exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

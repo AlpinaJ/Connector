@@ -6,29 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/App.cpp
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Gate.cpp
+Gate.h
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Gate.h
+
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Gate.h
 stdio.h
--
-string.h
--
-time.h
--
-chrono
--
-ctime
--
-functional
 -
 iostream
 -
-sstream
+Stock.h
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Stock.h
+oatpp-mbedtls/Config.hpp
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-mbedtls/Config.hpp
+oatpp-mbedtls/client/ConnectionProvider.hpp
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-mbedtls/client/ConnectionProvider.hpp
+oatpp-websocket/ConnectionHandler.hpp
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-websocket/ConnectionHandler.hpp
+oatpp-websocket/Connector.hpp
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-websocket/Connector.hpp
+oatpp-websocket/WebSocket.hpp
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-websocket/WebSocket.hpp
+rapidjson/document.h
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/rapidjson/document.h
+
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Stock.h
+string.h
 -
-thread
+iostream
+-
+memory
 -
 vector
 -
-WSListener.hpp
-/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/WSListener.hpp
+Trade.h
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Trade.h
 oatpp-mbedtls/Config.hpp
 /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-mbedtls/Config.hpp
 oatpp-mbedtls/client/ConnectionProvider.hpp
@@ -37,14 +49,12 @@ oatpp-websocket/Connector.hpp
 /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-websocket/Connector.hpp
 oatpp-websocket/WebSocket.hpp
 /home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-websocket/WebSocket.hpp
+rapidjson/document.h
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/rapidjson/document.h
 
-/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/WSListener.hpp
-fstream
+/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Trade.h
+iostream
 -
-oatpp-websocket/ConnectionHandler.hpp
-/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-websocket/ConnectionHandler.hpp
-oatpp-websocket/WebSocket.hpp
-/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/oatpp-websocket/WebSocket.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp-mbedtls/oatpp-mbedtls/Config.hpp
 mbedtls/entropy.h
@@ -70,18 +80,6 @@ oatpp-mbedtls/Config.hpp
 oatpp/network/ConnectionProvider.hpp
 /usr/local/include/oatpp-0.19.4/oatpp-mbedtls/oatpp-mbedtls/client/oatpp/network/ConnectionProvider.hpp
 
-/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/./Frame.hpp
-oatpp/core/Types.hpp
-/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/./oatpp/core/Types.hpp
-
-/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/./Utils.hpp
-./Frame.hpp
-/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/././Frame.hpp
-oatpp/core/concurrency/SpinLock.hpp
-/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/./oatpp/core/concurrency/SpinLock.hpp
-random
--
-
 /usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/ConnectionHandler.hpp
 WebSocket.hpp
 /usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/WebSocket.hpp
@@ -92,11 +90,23 @@ oatpp/network/server/ConnectionHandler.hpp
 oatpp/web/client/HttpRequestExecutor.hpp
 /usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/oatpp/web/client/HttpRequestExecutor.hpp
 
+/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/Frame.hpp
+oatpp/core/Types.hpp
+/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/oatpp/core/Types.hpp
+
+/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/Utils.hpp
+./Frame.hpp
+/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/Frame.hpp
+oatpp/core/concurrency/SpinLock.hpp
+/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/oatpp/core/concurrency/SpinLock.hpp
+random
+-
+
 /usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/WebSocket.hpp
 ./Frame.hpp
-/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/./Frame.hpp
+/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/Frame.hpp
 ./Utils.hpp
-/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/./Utils.hpp
+/usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/Utils.hpp
 oatpp/core/data/stream/ChunkedBuffer.hpp
 /usr/local/include/oatpp-0.19.4/oatpp-websocket/oatpp-websocket/oatpp/core/data/stream/ChunkedBuffer.hpp
 
@@ -106,11 +116,9 @@ oatpp/core/data/mapping/type/Object.hpp
 oatpp/core/data/mapping/type/Primitive.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/oatpp/core/data/mapping/type/Primitive.hpp
 
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/async/./Error.hpp
-
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/async/Coroutine.hpp
 ./Error.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/async/./Error.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/async/Error.hpp
 oatpp/core/data/IODefinitions.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/async/oatpp/core/data/IODefinitions.hpp
 oatpp/core/collection/FastQueue.hpp
@@ -128,43 +136,17 @@ exception
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/async/Error.hpp
 
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/./Config.hpp
-
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/./Countable.hpp
-memory
--
-./Environment.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/././Environment.hpp
-
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/./Environment.hpp
-./Config.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/././Config.hpp
-stdio.h
--
-atomic
--
-mutex
--
-string
--
-unordered_map
--
-memory
--
-stdexcept
--
-stdlib.h
--
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/Config.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/Countable.hpp
 memory
 -
 ./Environment.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/./Environment.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/Environment.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/Environment.hpp
 ./Config.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/./Config.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/Config.hpp
 stdio.h
 -
 atomic
@@ -186,26 +168,14 @@ stdlib.h
 memory/ObjectPool.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/ObjectPool.hpp
 ./Countable.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/./Countable.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/Countable.hpp
 cstring
 -
 
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/./Allocator.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/Allocator.hpp
 ./MemoryPool.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/././MemoryPool.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/MemoryPool.hpp
 memory
--
-
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/./MemoryPool.hpp
-oatpp/core/concurrency/SpinLock.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/./oatpp/core/concurrency/SpinLock.hpp
-oatpp/core/base/Environment.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/./oatpp/core/base/Environment.hpp
-list
--
-unordered_map
--
-cstring
 -
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/MemoryPool.hpp
@@ -222,9 +192,9 @@ cstring
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/ObjectPool.hpp
 ./Allocator.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/./Allocator.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/Allocator.hpp
 ./MemoryPool.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/./MemoryPool.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/base/memory/MemoryPool.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/collection/FastQueue.hpp
 oatpp/core/concurrency/SpinLock.hpp
@@ -278,51 +248,31 @@ oatpp/core/parser/Caret.hpp
 oatpp/core/parser/ParsingError.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/oatpp/core/parser/ParsingError.hpp
 
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./List.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/List.hpp
 ./Type.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/././Type.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/Type.hpp
 oatpp/core/collection/LinkedList.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/collection/LinkedList.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/oatpp/core/collection/LinkedList.hpp
 oatpp/core/base/memory/ObjectPool.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/base/memory/ObjectPool.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/oatpp/core/base/memory/ObjectPool.hpp
 oatpp/core/base/Countable.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/base/Countable.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/oatpp/core/base/Countable.hpp
 
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./ListMap.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/ListMap.hpp
 ./Type.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/././Type.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/Type.hpp
 oatpp/core/collection/ListMap.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/collection/ListMap.hpp
-
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./Primitive.hpp
-./Type.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/././Type.hpp
-oatpp/core/base/memory/ObjectPool.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/base/memory/ObjectPool.hpp
-oatpp/core/base/Countable.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/base/Countable.hpp
-oatpp/core/base/StrBuffer.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/base/StrBuffer.hpp
-
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./Type.hpp
-oatpp/core/base/Countable.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./oatpp/core/base/Countable.hpp
-list
--
-unordered_map
--
-string
--
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/oatpp/core/collection/ListMap.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/Object.hpp
 ./Type.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./Type.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/Type.hpp
 ./Primitive.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./Primitive.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/Primitive.hpp
 ./ListMap.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./ListMap.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/ListMap.hpp
 ./List.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./List.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/List.hpp
 oatpp/core/base/memory/ObjectPool.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/oatpp/core/base/memory/ObjectPool.hpp
 oatpp/core/base/Countable.hpp
@@ -330,7 +280,7 @@ oatpp/core/base/Countable.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/Primitive.hpp
 ./Type.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/./Type.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/Type.hpp
 oatpp/core/base/memory/ObjectPool.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/mapping/type/oatpp/core/base/memory/ObjectPool.hpp
 oatpp/core/base/Countable.hpp
@@ -354,14 +304,6 @@ oatpp/core/base/StrBuffer.hpp
 oatpp/core/Types.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/share/oatpp/core/Types.hpp
 
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/./Stream.hpp
-oatpp/core/async/Coroutine.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/./oatpp/core/async/Coroutine.hpp
-oatpp/core/data/buffer/IOBuffer.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/./oatpp/core/data/buffer/IOBuffer.hpp
-oatpp/core/data/IODefinitions.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/./oatpp/core/data/IODefinitions.hpp
-
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/ChunkedBuffer.hpp
 Stream.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/Stream.hpp
@@ -372,7 +314,7 @@ oatpp/core/async/Coroutine.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/Delegate.hpp
 ./Stream.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/./Stream.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/Stream.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/core/data/stream/Stream.hpp
 oatpp/core/async/Coroutine.hpp
@@ -412,21 +354,21 @@ unordered_map
 oatpp/core/data/stream/Stream.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/network/server/oatpp/core/data/stream/Stream.hpp
 
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/./RequestExecutor.hpp
-oatpp/web/protocol/http/incoming/Response.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/./oatpp/web/protocol/http/incoming/Response.hpp
-oatpp/web/protocol/http/outgoing/Body.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/./oatpp/web/protocol/http/outgoing/Body.hpp
-oatpp/web/protocol/http/Http.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/./oatpp/web/protocol/http/Http.hpp
-
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/HttpRequestExecutor.hpp
 ./RequestExecutor.hpp
-/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/./RequestExecutor.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/RequestExecutor.hpp
 oatpp/web/protocol/http/incoming/SimpleBodyDecoder.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/oatpp/web/protocol/http/incoming/SimpleBodyDecoder.hpp
 oatpp/network/ConnectionProvider.hpp
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/oatpp/network/ConnectionProvider.hpp
+
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/RequestExecutor.hpp
+oatpp/web/protocol/http/incoming/Response.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/oatpp/web/protocol/http/incoming/Response.hpp
+oatpp/web/protocol/http/outgoing/Body.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/oatpp/web/protocol/http/outgoing/Body.hpp
+oatpp/web/protocol/http/Http.hpp
+/usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/client/oatpp/web/protocol/http/Http.hpp
 
 /usr/local/include/oatpp-0.19.4/oatpp/oatpp/web/protocol/CommunicationError.hpp
 oatpp/core/data/IODefinitions.hpp

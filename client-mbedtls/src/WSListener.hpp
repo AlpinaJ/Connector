@@ -1,14 +1,12 @@
-#ifndef WSListener_hpp
-#define WSListener_hpp
+#ifndef WSLISTENER_HPP
+#define WSLISTENER_HPP
+
 #include <fstream>
+#include "Stock.h"
+#include "Binance.h"
 #include "oatpp-websocket/ConnectionHandler.hpp"
 #include "oatpp-websocket/WebSocket.hpp"
 
-struct request {
-  std::string stock_name;
-  std::string pair_name;
-  int ohlc_time;
-};
 struct TradeData {
   double open_price_;
   double close_price_;
@@ -28,9 +26,6 @@ struct TradeData {
         start_time_(start_time) {}
 };
 
-/**
- * WebSocket listener listens on incoming WebSocket events.
- */
 class WSListener : public oatpp::websocket::WebSocket::Listener {
  private:
   static constexpr const char *TAG = "Client_WSListener";
@@ -44,16 +39,14 @@ class WSListener : public oatpp::websocket::WebSocket::Listener {
   int duration;
   double open_price, close_price, high_price, low_price, volume = 0;
   bool first_time = true;
+  std::shared_ptr<Stock> req;
 
-  /**
-   * Buffer for messages. Needed for multi-frame messages.
-   */
   oatpp::data::stream::ChunkedBuffer m_messageBuffer;
 
  public:
   WSListener(std::mutex &writeMutex,
              std::ofstream &stream_,
-             const request &req);
+             std::shared_ptr<Stock> &req);
 
   /**
    * Called on "ping" frame.
@@ -94,27 +87,6 @@ class WSListener : public oatpp::websocket::WebSocket::Listener {
   TradeData getTradeData() const {
     return {open_price, close_price, high_price, low_price, start_time};
   }
-
-  // Do we need these setter? If not they should be deleted.
-  // void setOpenPrice(double price) {
-  //   open_price = price;
-  // }
-  // void setClosePrice(double price) {
-  //   close_price = price;
-  // }
-  // void setHighPrice(double price) {
-  //   high_price = price;
-  // }
-  // void setLowPrice(double price) {
-  //   low_price = price;
-  // }
-  // void setVolume(double volume) {
-  //   open_price = new_open_price;
-  // }
-  // void setStartTime(std::chrono::time_point<std::chrono::system_clock> time)
-  // {
-  //   start_time = time;
-  // }
 };
 
-#endif  // WSListener_hpp
+#endif  // WSLISTENER_HPP

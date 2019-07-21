@@ -7,131 +7,31 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include "Binance.h"
 #include "rapidjson/document.h"
 
 using namespace std;
 using namespace rapidjson;
-using TimeType = unsigned long long int;
 
-struct trade {
-  std::string stock;
-  std::string pair;
-  double price;
-  double amount;
-  TimeType time;
-};
+void printTrade(Trade trade_, std::ofstream &stream) {
+  // auto time = trade_.stock == "gate" ? trade_.time * 1000 : trade_.time;
 
-using TimeType = unsigned long long int;
-
-//parse date to miliseconds
-static TimeType date_to_ms(const string &datetime) {
-  auto iter_T = datetime.find('T');
-  string date = datetime.substr(0, iter_T);
-  string time = datetime.substr(iter_T + 1, datetime.size() - iter_T - 2);
-
-  int year, month, day;
-  istringstream date_stream(date);
-  date_stream >> year;
-  date_stream.ignore(1);
-  date_stream >> month;
-  date_stream.ignore(1);
-  date_stream >> day;
-
-  int hour, min;
-  double sec;
-  istringstream time_stream(time);
-  time_stream >> hour;
-  time_stream.ignore(1);
-  time_stream >> min;
-  time_stream.ignore(1);
-  time_stream >> sec;
-
-  std::tm zero = {0}, timer = {0};
-  TimeType seconds;
-
-  timer.tm_hour = hour;
-  timer.tm_min = min;
-  timer.tm_sec = sec;
-  timer.tm_year = year - 1970;
-  timer.tm_mon = month - 1;
-  timer.tm_mday = day - 1;
-
-  seconds = difftime(mktime(&timer), mktime(&zero));
-
-  return seconds * 1000;
-}
-
-void printTrade(trade trade_, std::ofstream &stream) {
-  auto time = trade_.stock == "gate" ? trade_.time * 1000 : trade_.time;
-
-  stream << setw(12) << left << trade_.stock << setw(12) << left << trade_.pair
+  stream << setw(10) << left << trade_.stock << setw(10) << left << trade_.pair
          << setw(12) << left << trade_.price << setw(12) << left
-         << trade_.amount << setw(12) << left << time << endl;
+         << trade_.amount << setw(13) << left << trade_.time << endl;
 }
 
-std::vector<trade> convert(const std::string &stock_name,
-                           const std::string &pair_name,
-                           Document &json,
-                           std::ofstream &stream) {
-  std::vector<trade> trades;
-
-  // Binance
-  if (stock_name == "binance") {
-    trade cur_trade;
-    cur_trade.stock = stock_name;
-    cur_trade.pair = json["s"].GetString();
-    cur_trade.price = std::stod(json["p"].GetString());
-    cur_trade.amount = std::stod(json["q"].GetString());
-    cur_trade.time = json["T"].GetUint64();
-    trades.push_back(cur_trade);
-    return trades;
-  }
-
-  // Gate
-  if (stock_name == "gate") {
-    trade cur_trade;
-    cur_trade.stock = stock_name;
-    cur_trade.pair = json["params"][0].GetString();
-    Value &json_ = json["params"][1];
-
-    for (SizeType i = 0; i < json_.Size(); i++) {
-      cur_trade.price = std::stod(json_[i]["price"].GetString());
-      cur_trade.amount = std::stod(json_[i]["amount"].GetString());
-      cur_trade.time = (unsigned long long int)(json_[i]["time"].GetDouble());
-      trades.push_back(cur_trade);
-    }
-    return trades;
-  }
-
-  // HitBtc
-  if (stock_name == "hitbtc") {
-    trade cur_trade;
-    cur_trade.stock = stock_name;
-    cur_trade.pair = pair_name;
-    Value &json_ = json["params"];
-    Value &json__ = json_["data"];
-
-    for (SizeType i = 0; i < json__.Size(); i++) {
-      cur_trade.price = std::stod(json__[i]["price"].GetString());
-      cur_trade.amount = std::stod(json__[i]["quantity"].GetString());
-      std::string s = json__[i]["timestamp"].GetString();
-      cur_trade.time = date_to_ms(s);
-      trades.push_back(cur_trade);
-    }
-  }
-  
-  //***ADD CONVERTATIONS FOR OTHER STOCKS***
-}
 WSListener::WSListener(std::mutex &writeMutex,
                        std::ofstream &stream_,
-                       const request &req)
+                       shared_ptr<Stock> &req_)
     : m_writeMutex(writeMutex),
       stream(stream_),
-      name_of_stock(req.stock_name),
-      name_of_pair(req.pair_name),
-      isohlc(req.ohlc_time > 0),
-      duration(req.ohlc_time),
-      start_time(std::chrono::system_clock::now()) {}
+      name_of_stock(req_->stock),
+      name_of_pair(req_->pair),
+      isohlc(req_->time > 0),
+      duration(req_->time),
+      start_time(std::chrono::system_clock::now()),
+      req(req_) {}
 
 void WSListener::onPing(const WebSocket &socket, const oatpp::String &message) {
   std::lock_guard<std::mutex> lock(m_writeMutex);
@@ -158,8 +58,7 @@ void WSListener::readMessage(const WebSocket &socket,
     if ((document.HasMember("error") == false && name_of_stock == "gate")
         || (name_of_stock == "hitbtc" && document.HasMember("result") == false)
         || (name_of_stock == "binance")) {
-      std::vector<trade> trades =
-          convert(name_of_stock, name_of_pair, document, stream);
+      std::vector<Trade> trades = this->req->convert(document);
 
       if (isohlc) {
         double cur_volume = 0;
@@ -188,11 +87,12 @@ void WSListener::readMessage(const WebSocket &socket,
           auto now_ms = std::chrono::duration_cast<std::chrono::milliseconds>(
                             start_time.time_since_epoch())
                             .count();
-          stream << setw(12) << left << name_of_stock << setw(12) << left
+          stream << setw(10) << left << name_of_stock << setw(10) << left
                  << name_of_pair << setw(12) << left << open_price << setw(12)
                  << left << high_price << setw(12) << left << low_price
                  << setw(12) << left << close_price << setw(12) << left
-                 << volume << setw(12) << left << now_ms<<std::endl;
+                 << volume << setw(13) << left << now_ms << " ";
+          stream << duration << std::endl;
           volume = 0;
         }
       } else {
