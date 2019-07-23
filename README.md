@@ -1,10 +1,11 @@
 # Connector
 In order to build the project:
-`mkdir build  
+```
+ mkdir build  
  cd build  
  cmake ..  
  make
-`  
+```  
 In order to run:
  `./websocket-client-mbedtls-exe binance ethbtc 0 ethbtc 1 gate ETH_BTC 2 hitbtc ETHBTC 0 ETHBTC 1 (name of stock: pair time pair time ...)`
 
