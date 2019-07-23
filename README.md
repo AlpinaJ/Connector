@@ -1,5 +1,9 @@
 # Connector
-In order to successfully build the project:
-1)install oatpp: https://github.com/oatpp/oatpp
-2)install oatpp-websocket:https://github.com/oatpp/oatpp-websocket
-3)install oatpp-mbedtls://github.com/oatpp/oatpp-mbedtls
+In order to build the project:
+mkdir build
+cd build
+cmake ..
+make
+./websocket-client-mbedtls-exe binance ethbtc 0 ethbtc 1 gate ETH_BTC 2 hitbtc ETHBTC 0 ETHBTC 1 (name of stock: pair time pair time ...)
+
+If you want to add new stock, add to CmakeLists.txt to add_executable(${project_name}-exe src/stocks/impl/YourStockName.cpp
