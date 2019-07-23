@@ -1,8 +1,8 @@
 # Connector
 In order to build the project:
-`mkdir build
- cd build
- cmake ..
+`mkdir build  
+ cd build  
+ cmake ..  
  make
 `  
 In order to run:
