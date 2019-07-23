@@ -1,9 +1,9 @@
-#ifndef HITBTC_HPP
-#define HITBTC_HPP
+#ifndef GATE_HPP
+#define GATE_HPP
 
 #include <stdio.h>
 #include <iostream>
-#include "Stock.h"
+#include <stocks/Stock.h>
 #include "oatpp-mbedtls/Config.hpp"
 #include "oatpp-mbedtls/client/ConnectionProvider.hpp"
 #include "oatpp-websocket/ConnectionHandler.hpp"
@@ -14,9 +14,10 @@
 using namespace rapidjson;
 using namespace std;
 
-class Hitbtc : public Stock {
+class Gate : public Stock {
  public:
-  Hitbtc(string pair_, int time_);
+
+  Gate(string pair_, int time_);
   void makeConnection(
       shared_ptr<oatpp::websocket::WebSocket> &websocket) override;
   vector<Trade> convert(Document &json) override;

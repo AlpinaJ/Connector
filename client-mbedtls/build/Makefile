@@ -176,87 +176,6 @@ src/App.cpp.s:
 	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.s
 .PHONY : src/App.cpp.s
 
-src/Binance.o: src/Binance.cpp.o
-
-.PHONY : src/Binance.o
-
-# target to build an object file
-src/Binance.cpp.o:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o
-.PHONY : src/Binance.cpp.o
-
-src/Binance.i: src/Binance.cpp.i
-
-.PHONY : src/Binance.i
-
-# target to preprocess a source file
-src/Binance.cpp.i:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.i
-.PHONY : src/Binance.cpp.i
-
-src/Binance.s: src/Binance.cpp.s
-
-.PHONY : src/Binance.s
-
-# target to generate assembly for a file
-src/Binance.cpp.s:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.s
-.PHONY : src/Binance.cpp.s
-
-src/Gate.o: src/Gate.cpp.o
-
-.PHONY : src/Gate.o
-
-# target to build an object file
-src/Gate.cpp.o:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o
-.PHONY : src/Gate.cpp.o
-
-src/Gate.i: src/Gate.cpp.i
-
-.PHONY : src/Gate.i
-
-# target to preprocess a source file
-src/Gate.cpp.i:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.i
-.PHONY : src/Gate.cpp.i
-
-src/Gate.s: src/Gate.cpp.s
-
-.PHONY : src/Gate.s
-
-# target to generate assembly for a file
-src/Gate.cpp.s:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.s
-.PHONY : src/Gate.cpp.s
-
-src/Hitbtc.o: src/Hitbtc.cpp.o
-
-.PHONY : src/Hitbtc.o
-
-# target to build an object file
-src/Hitbtc.cpp.o:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o
-.PHONY : src/Hitbtc.cpp.o
-
-src/Hitbtc.i: src/Hitbtc.cpp.i
-
-.PHONY : src/Hitbtc.i
-
-# target to preprocess a source file
-src/Hitbtc.cpp.i:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.i
-.PHONY : src/Hitbtc.cpp.i
-
-src/Hitbtc.s: src/Hitbtc.cpp.s
-
-.PHONY : src/Hitbtc.s
-
-# target to generate assembly for a file
-src/Hitbtc.cpp.s:
-	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.s
-.PHONY : src/Hitbtc.cpp.s
-
 src/Trade.o: src/Trade.cpp.o
 
 .PHONY : src/Trade.o
@@ -310,6 +229,87 @@ src/WSListener.s: src/WSListener.cpp.s
 src/WSListener.cpp.s:
 	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-lib.dir/build.make CMakeFiles/websocket-client-mbedtls-lib.dir/src/WSListener.cpp.s
 .PHONY : src/WSListener.cpp.s
+
+src/stocks/impl/Binance.o: src/stocks/impl/Binance.cpp.o
+
+.PHONY : src/stocks/impl/Binance.o
+
+# target to build an object file
+src/stocks/impl/Binance.cpp.o:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Binance.cpp.o
+.PHONY : src/stocks/impl/Binance.cpp.o
+
+src/stocks/impl/Binance.i: src/stocks/impl/Binance.cpp.i
+
+.PHONY : src/stocks/impl/Binance.i
+
+# target to preprocess a source file
+src/stocks/impl/Binance.cpp.i:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Binance.cpp.i
+.PHONY : src/stocks/impl/Binance.cpp.i
+
+src/stocks/impl/Binance.s: src/stocks/impl/Binance.cpp.s
+
+.PHONY : src/stocks/impl/Binance.s
+
+# target to generate assembly for a file
+src/stocks/impl/Binance.cpp.s:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Binance.cpp.s
+.PHONY : src/stocks/impl/Binance.cpp.s
+
+src/stocks/impl/Gate.o: src/stocks/impl/Gate.cpp.o
+
+.PHONY : src/stocks/impl/Gate.o
+
+# target to build an object file
+src/stocks/impl/Gate.cpp.o:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Gate.cpp.o
+.PHONY : src/stocks/impl/Gate.cpp.o
+
+src/stocks/impl/Gate.i: src/stocks/impl/Gate.cpp.i
+
+.PHONY : src/stocks/impl/Gate.i
+
+# target to preprocess a source file
+src/stocks/impl/Gate.cpp.i:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Gate.cpp.i
+.PHONY : src/stocks/impl/Gate.cpp.i
+
+src/stocks/impl/Gate.s: src/stocks/impl/Gate.cpp.s
+
+.PHONY : src/stocks/impl/Gate.s
+
+# target to generate assembly for a file
+src/stocks/impl/Gate.cpp.s:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Gate.cpp.s
+.PHONY : src/stocks/impl/Gate.cpp.s
+
+src/stocks/impl/Hitbtc.o: src/stocks/impl/Hitbtc.cpp.o
+
+.PHONY : src/stocks/impl/Hitbtc.o
+
+# target to build an object file
+src/stocks/impl/Hitbtc.cpp.o:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Hitbtc.cpp.o
+.PHONY : src/stocks/impl/Hitbtc.cpp.o
+
+src/stocks/impl/Hitbtc.i: src/stocks/impl/Hitbtc.cpp.i
+
+.PHONY : src/stocks/impl/Hitbtc.i
+
+# target to preprocess a source file
+src/stocks/impl/Hitbtc.cpp.i:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Hitbtc.cpp.i
+.PHONY : src/stocks/impl/Hitbtc.cpp.i
+
+src/stocks/impl/Hitbtc.s: src/stocks/impl/Hitbtc.cpp.s
+
+.PHONY : src/stocks/impl/Hitbtc.s
+
+# target to generate assembly for a file
+src/stocks/impl/Hitbtc.cpp.s:
+	$(MAKE) -f CMakeFiles/websocket-client-mbedtls-exe.dir/build.make CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Hitbtc.cpp.s
+.PHONY : src/stocks/impl/Hitbtc.cpp.s
 
 test/WSTest.o: test/WSTest.cpp.o
 
@@ -379,21 +379,21 @@ help:
 	@echo "... src/App.o"
 	@echo "... src/App.i"
 	@echo "... src/App.s"
-	@echo "... src/Binance.o"
-	@echo "... src/Binance.i"
-	@echo "... src/Binance.s"
-	@echo "... src/Gate.o"
-	@echo "... src/Gate.i"
-	@echo "... src/Gate.s"
-	@echo "... src/Hitbtc.o"
-	@echo "... src/Hitbtc.i"
-	@echo "... src/Hitbtc.s"
 	@echo "... src/Trade.o"
 	@echo "... src/Trade.i"
 	@echo "... src/Trade.s"
 	@echo "... src/WSListener.o"
 	@echo "... src/WSListener.i"
 	@echo "... src/WSListener.s"
+	@echo "... src/stocks/impl/Binance.o"
+	@echo "... src/stocks/impl/Binance.i"
+	@echo "... src/stocks/impl/Binance.s"
+	@echo "... src/stocks/impl/Gate.o"
+	@echo "... src/stocks/impl/Gate.i"
+	@echo "... src/stocks/impl/Gate.s"
+	@echo "... src/stocks/impl/Hitbtc.o"
+	@echo "... src/stocks/impl/Hitbtc.i"
+	@echo "... src/stocks/impl/Hitbtc.s"
 	@echo "... test/WSTest.o"
 	@echo "... test/WSTest.i"
 	@echo "... test/WSTest.s"

@@ -1,4 +1,4 @@
-#include "Gate.h"
+#include <stocks/Gate.h>
 
 using namespace std;
 

@@ -2,8 +2,8 @@
 #define WSLISTENER_HPP
 
 #include <fstream>
-#include "Stock.h"
-#include "Binance.h"
+#include "stocks/Stock.h"
+#include "stocks/Binance.h"
 #include "oatpp-websocket/ConnectionHandler.hpp"
 #include "oatpp-websocket/WebSocket.hpp"
 

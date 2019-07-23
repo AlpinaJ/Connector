@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <string>
 #include <time.h>
 #include <chrono>
 #include <ctime>
@@ -8,10 +8,10 @@
 #include <sstream>
 #include <thread>
 #include <vector>
-#include "Binance.h"
-#include "Gate.h"
-#include "Hitbtc.h"
-#include "Stock.h"
+#include "stocks/Binance.h"
+#include "stocks/Gate.h"
+#include "stocks/Hitbtc.h"
+#include "stocks/Stock.h"
 #include "WSListener.hpp"
 #include "oatpp-mbedtls/Config.hpp"
 #include "oatpp-mbedtls/client/ConnectionProvider.hpp"
@@ -75,17 +75,53 @@ void run(vector<shared_ptr<Stock>> v) {
   }
 }
 
-int main() {
-  // Binance b("ethbtc",1);
-  // cout<<b.stock<<" "<<b.pair<<" "<<b.time;
-  vector<shared_ptr<Stock>> v;
-  // //"ethbtc"
-  v.push_back(make_shared<Hitbtc>("ETHBTC", 0));
-  v.push_back(make_shared<Hitbtc>("ETHBTC", 1));
-  v.push_back(make_shared<Gate>("ETH_BTC", 0));
-  v.push_back(make_shared<Gate>("ETH_BTC", 1));
-  v.push_back(make_shared<Binance>("ethbtc", 1));
-  v.push_back(make_shared<Binance>("ethbtc", 0));
+vector<shared_ptr<Stock>> parse(int argc, char **argv) {
+  vector<shared_ptr<Stock>> result;
+  vector<string> args;
+  for (int j=1;j<argc;j++){
+    args.push_back(argv[j]);
+  }
+
+  int k = 0, i = 0;
+  while (i < args.size()) {
+    if (args[i] == "binance") {
+      k = 1;
+      i++;
+      continue;
+    }
+    if (args[i] == "gate") {
+      k = 2;
+      i++;
+      continue;
+    }
+    if (args[i] == "hitbtc") {
+      k = 3;
+      i++;
+      continue;
+    }
+
+    if (k == 1) {
+      result.push_back(make_shared<Binance>(args[i], stoi(args[i+1])));
+      i=i+2;
+      continue;
+    }
+
+    if (k ==2) {
+      result.push_back(make_shared<Gate>(args[i], stoi(args[i+1])));
+      i=i+2;
+      continue;
+    }
+    if (k == 3) {
+      result.push_back(make_shared<Hitbtc>(args[i], stoi(args[i+1])));
+      i=i+2;
+      continue;
+    }
+  }
+  return move(result);
+}
+int main(int argc, char *argv[]) {
+
+  vector<shared_ptr<Stock>> v = parse(argc, argv);
   oatpp::base::Environment::init();
   run(move(v));
   oatpp::base::Environment::destroy();

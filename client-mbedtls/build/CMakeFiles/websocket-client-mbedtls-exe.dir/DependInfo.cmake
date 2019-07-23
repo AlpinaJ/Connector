@@ -5,10 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/App.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/App.cpp.o"
-  "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Binance.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/Binance.cpp.o"
-  "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Gate.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/Gate.cpp.o"
-  "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Hitbtc.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/Hitbtc.cpp.o"
   "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/Trade.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/Trade.cpp.o"
+  "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/stocks/impl/Binance.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Binance.cpp.o"
+  "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/stocks/impl/Gate.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Gate.cpp.o"
+  "/home/julia/Desktop/intership/example-websocket/client-mbedtls/src/stocks/impl/Hitbtc.cpp" "/home/julia/Desktop/intership/example-websocket/client-mbedtls/build/CMakeFiles/websocket-client-mbedtls-exe.dir/src/stocks/impl/Hitbtc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

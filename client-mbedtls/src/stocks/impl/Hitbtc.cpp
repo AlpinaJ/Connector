@@ -1,4 +1,4 @@
-#include "Hitbtc.h"
+#include <stocks/Hitbtc.h>
 #include <iostream>
 #include <sstream>
 
